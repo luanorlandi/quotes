@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes | created by Luan Orlandi</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <span id="quote"></span>
+    <script>
+        const quotes = [
+            'lorem ipsum',
+            'ipsum lorem'
+        ];
+
+        const randomIndex = Math.floor(Math.random() * quotes.length)
+        const quote = quotes[randomIndex]
+
+        const quoteElement = document.getElementById('#quote');
+        quoteElement.textContent(quote)
+    </script>
+</body>
+</html>
