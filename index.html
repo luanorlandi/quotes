@@ -6,21 +6,44 @@
     <title>Quotes | created by Luan Orlandi</title>
     <style>
         html, body {
-            background: transparent;
+            background: #2f3437;
+        }
+
+        body {
+            padding: 3px 2px;
         }
 
         #quote {
             font-size: 16px;
-            caret-color: rgba(255, 255, 255, 0.9);
+            color: rgba(255, 255, 255, 0.9);
+            font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            border-left: 3px solid currentcolor;
+            padding-left: 0.9em;
+            padding-right: 0.9em;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <span id="quote"></span>
+    <div id="quote"></div>
     <script>
         const quotes = [
-            'lorem ipsum',
-            'ipsum lorem'
+            'Your life will be no better than the plans you make and the action you take. You are the architect and builder of your own life, fortune, and destiny" — Alfred A. Montapert',
+            '"Research your own experience. Absorb what is useful. Reject what is useless. Add what is essentially your own" — Bruce Lee',
+            '"They may forget what you said — but they will never forget how you made them feel" — Carl W. Buehner',
+            '"Am I pretending not to notice my role in the problem?" — Crucial Conversations',
+            '"Why would a reasonable, rational, and decent person say this?" — Crucial Conversations',
+            '"Accept your strong and weak points" — Daniel Maritz',
+            '"It is normal to feel "under-confident" in new situations" — Daniel Maritz',
+            '"It\'s ok to make mistakes" — Daniel Maritz',
+            '"You are unique" — Daniel Maritz',
+            '"No início, eles duvidam e fazem chacota. Depois de seu sucesso, dão tapinhas nas costas e dizem que sempre acreditaram em você." — Flávio Augusto',
+            '"A cultura minimalista é um caminho sem volta para uma sociedade mais equilibrada e com menos desigualdade" — Gustavo Cerbasi',
+            '"Enriquecer é uma questão de escolha" — Gustavo Cerbasi',
+            '"If I have seen further it is by standing on the shoulders of Giants" — Isaac Newton',
+            '"When I\'m old and dying, I plan to look back on my life and say \'wow, that was an adventure\' not \'wow, I sure felt safe\'" — Tom Preston-Werner',
+            '"Nothing in this world is good or bad, but thinking makes it so" — William Shakespeare',
+            '"Spend more time searching for better information sources. A body filled with junk food struggles to move well. A mind filled with junk thoughts struggles to think well." — James Clear'
         ];
 
         const randomIndex = Math.floor(Math.random() * quotes.length)
